@@ -45,13 +45,13 @@ app.get('/api/error', (req, res) => {
 })
 
 // connecting some stuffs
-// app.get('/js', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../public/index.js'))
-// })
+app.get('/public/index.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/index.js'))
+})
 
-// app.get('/styles.css', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../public/styles.css'))
-// })
+app.get('/public/styles.css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/styles.css'))
+})
 
 
 const port = process.env.PORT || 4204
