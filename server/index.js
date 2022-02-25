@@ -45,11 +45,11 @@ app.get('/api/error', (req, res) => {
 })
 
 // connecting some stuffs
-app.get('/public/index.html', (req, res) => {
+app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.js'))
 })
 
-app.get('/public/styles.css', (req, res) => {
+app.get('/styles.css', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/styles.css'))
 })
 
