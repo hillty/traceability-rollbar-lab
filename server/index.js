@@ -15,7 +15,7 @@ rollbar.log('Hello world!')
 
 const app = express()
 
-app.use(express.json)
+app.use(express.json())
 app.use(rollbar.errorHandler())
 
 // get endpoints here and shi

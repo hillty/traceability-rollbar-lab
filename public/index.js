@@ -1,5 +1,7 @@
 console.log('front end java right here bby')
 
+const axios = require('axios')
+
 const sendInfo = () => {
     console.log('sent info')
     axios.get('/api/info').then(res => {
