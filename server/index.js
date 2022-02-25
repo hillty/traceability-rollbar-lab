@@ -45,7 +45,7 @@ app.get('/api/error', (req, res) => {
 })
 
 // connecting some stuffs
-app.get('/js', (req, res) => {
+app.get('/index.js', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.js'))
 })
 
