@@ -9,7 +9,7 @@ const sendInfo = () => {
 
 const sendCritical = () => {
     console.log('sent critical')
-    axios.get('/api/critcal').then(res => {
+    axios.get('/api/critical').then(res => {
         alert(res.data)
     }).catch(err => console.log(err))
 }
